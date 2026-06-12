@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+Intermediate/
+Binaries/
+DerivedDataCache/
+.vs/
+.vscode/
+*.sln
+*.VC.db
+*.opensdf
+*.suo
+*.user
+*.log
+*.tmp
