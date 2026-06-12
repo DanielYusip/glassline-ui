@@ -29,9 +29,9 @@ TSharedRef<SWidget> UGlasslineUILayerWidget::RebuildWidget()
 		Browser = WidgetTree->ConstructWidget<UWebBrowser>(UWebBrowser::StaticClass(), TEXT("GlasslineBrowser"));
 		Browser->OnConsoleMessage.AddDynamic(this, &UGlasslineUILayerWidget::HandleConsoleMessage);
 
-		UCanvasPanelSlot* Slot = RootPanel->AddChildToCanvas(Browser);
-		Slot->SetAnchors(FAnchors(0.0f, 0.0f, 1.0f, 1.0f));
-		Slot->SetOffsets(FMargin(0.0f));
+		UCanvasPanelSlot* BrowserSlot = RootPanel->AddChildToCanvas(Browser);
+		BrowserSlot->SetAnchors(FAnchors(0.0f, 0.0f, 1.0f, 1.0f));
+		BrowserSlot->SetOffsets(FMargin(0.0f));
 	}
 
 	return Super::RebuildWidget();

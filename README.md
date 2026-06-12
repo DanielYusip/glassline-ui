@@ -49,3 +49,9 @@ docs/                            Architecture and roadmap
 ## Current Status
 
 Pre-alpha scaffold. The runtime and Unreal plugin are intentionally small so the public repo starts clean.
+
+Verified locally:
+
+- `npm run typecheck`
+- `npm run build`
+- Unreal 5.8 Preview `RunUAT BuildPlugin -TargetPlatforms=Win64`

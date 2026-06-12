@@ -7,7 +7,7 @@
 
 namespace
 {
-	FString EscapeJsonString(FString Value)
+	FString GlasslineEscapeJsonString(FString Value)
 	{
 		Value.ReplaceInline(TEXT("\\"), TEXT("\\\\"));
 		Value.ReplaceInline(TEXT("\""), TEXT("\\\""));
@@ -103,7 +103,7 @@ void UGlasslineUILayerSubsystem::SendToLayer(const FString& LayerName, const FSt
 
 	const FString Message = FString::Printf(
 		TEXT("{\"type\":\"%s\",\"payload\":%s}"),
-		*EscapeJsonString(MessageType),
+		*GlasslineEscapeJsonString(MessageType),
 		JsonPayload.IsEmpty() ? TEXT("null") : *JsonPayload);
 	(*Layer)->SendJsonMessage(Message);
 }

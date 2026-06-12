@@ -15,6 +15,8 @@
 - Receive JavaScript commands in Unreal
 - Hot reload local UI files
 
+Status: the first WebBrowser-backed layer subsystem packages successfully on Win64 with Unreal Engine 5.8 Preview. It still needs proper command dispatch, input policy, and asset URL resolution.
+
 ## Milestone 2: Real Renderer
 
 - CEF offscreen renderer prototype
