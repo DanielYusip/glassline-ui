@@ -24,6 +24,7 @@ Glassline is the bridge between those worlds.
 
 - TypeScript runtime bridge for browser-side UI code
 - Unreal plugin skeleton with layer lifecycle and message dispatch
+- Unreal renderer backend interface
 - local HTML HUD example
 - JSON message protocol
 - future-ready renderer interface for CEF, WebView, Ultralight-style backends, or custom renderers

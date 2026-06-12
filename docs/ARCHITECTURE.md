@@ -13,6 +13,8 @@ Core concepts:
 - `Renderer`: implementation that can load a URL/document and present pixels.
 - `InputRouter`: converts engine input into DOM-like events or backend-native input.
 
+The Unreal plugin exposes `IGlasslineRendererBackend` so the WebBrowser-backed prototype can be replaced by an offscreen CEF renderer without changing the authoring runtime.
+
 ## 2. Browser Runtime
 
 The browser runtime is a tiny JavaScript API injected into UI documents. It does not require React, Vue, Solid, Svelte, or any specific framework.
